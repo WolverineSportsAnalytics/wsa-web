@@ -22,7 +22,7 @@ export class FrontPageComponent implements OnInit {
       {name: 'Justin Liss', title: 'Member', img: environment.imageURL + 'JustinLiss.jpg'}
     ];
 
-    this.wsaLogo = environment.imageURL + 'wsa_home.jpg';
+    this.wsaLogo = environment.imageURL + 'tile.png';
 
     if (window.innerWidth <= 400) {
       this.breakpoint = 1;

@@ -18,7 +18,6 @@ export class HomeComponent implements OnInit {
     this.loggedIn = this.isAuthenticated();
   }
 
-
   ngOnInit() {
   }
 

@@ -1,3 +1,15 @@
 .example-fill-remaining-space {
   flex: 1 1 auto;
 }
+
+.left {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5%;
+  height: 60%;
+}
+
+.words {
+  margin-left: 1em;
+}
