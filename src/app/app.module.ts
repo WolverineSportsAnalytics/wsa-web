@@ -24,8 +24,8 @@ import { AuthService } from './login/auth.service';
 import { CommonDataService } from './shared/services/common-data.service';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import { MembersComponent } from './members/members.component';
 import { AboutComponent } from './about/about.component';
+import { TeamComponent } from './team/team.component';
 //import { FlexLayoutModule } from '@angular/flex-layout';
 //import {HttpClientInMemoryWebApiModule, InMemoryWebApiModule} from 'angular-in-memory-web-api';
 
@@ -35,8 +35,8 @@ import { AboutComponent } from './about/about.component';
     HomeComponent,
     FrontPageComponent,
     LoginComponent,
-    MembersComponent,
-    AboutComponent
+    AboutComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
