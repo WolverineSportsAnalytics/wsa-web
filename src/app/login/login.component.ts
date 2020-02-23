@@ -3,6 +3,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from './auth.service';
 import { User } from '../shared/models/user';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+//import { MatSidenavModule } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-login',

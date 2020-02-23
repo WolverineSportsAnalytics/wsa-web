@@ -19,7 +19,8 @@ export class FrontPageComponent implements OnInit {
       {name: 'Evan Ciancio', title: 'President', img: environment.imageURL + 'EvanCiancio.jpg' },
       {name: 'Jake Becker', title: 'President', img: environment.imageURL + 'JakeBecker.jpg'},
       {name: 'Phillip Mathew', title: 'Vice President', img: environment.imageURL + 'phillipmathew.jpg'},
-      {name: 'Justin Liss', title: 'Member', img: environment.imageURL + 'JustinLiss.jpg'}
+      {name: 'Justin Liss', title: 'Member', img: environment.imageURL + 'JustinLiss.jpg'},
+      {name: 'Cindy Gu', title: 'Member', img: environment.imageURL + 'CindyGu.jpg'}
     ];
 
     this.wsaLogo = environment.imageURL + 'tile.png';

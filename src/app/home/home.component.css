@@ -3,13 +3,26 @@
 }
 
 .left {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 5%;
-  height: 60%;
+  width: 100px;
+  top: 15px;
+  height: 50px;
+  margin-left: 0;
 }
 
 .words {
-  margin-left: 1em;
+  margin-left: 1;
+}
+
+body {
+  margin: 0;
+}
+
+.toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 998;
+  min-height: 70px;
+  max-height: 1000px;
 }

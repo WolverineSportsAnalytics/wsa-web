@@ -4,6 +4,7 @@ import { LoginComponent } from '../login/login.component';
 import { MatDialog } from '@angular/material/dialog';
 import { User } from '../shared/models/user';
 import { AuthService } from '../login/auth.service';
+//import { MatSidenavModule } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-home',
@@ -37,6 +38,11 @@ export class HomeComponent implements OnInit {
         }
       }
     });
+  }
+
+  logout() {
+    this.loggedIn = !this.auth.isAuthenticated();
+    return this.loggedIn;
   }
 
   isAuthenticated(): boolean {

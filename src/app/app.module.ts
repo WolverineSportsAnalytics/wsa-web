@@ -15,6 +15,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
+//import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { FrontPageComponent } from './front-page/front-page.component';
 import { LoginComponent } from './login/login.component';
@@ -23,6 +24,8 @@ import { AuthService } from './login/auth.service';
 import { CommonDataService } from './shared/services/common-data.service';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { MembersComponent } from './members/members.component';
+import { AboutComponent } from './about/about.component';
 //import { FlexLayoutModule } from '@angular/flex-layout';
 //import {HttpClientInMemoryWebApiModule, InMemoryWebApiModule} from 'angular-in-memory-web-api';
 
@@ -31,7 +34,9 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     HomeComponent,
     FrontPageComponent,
-    LoginComponent
+    LoginComponent,
+    MembersComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +49,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     MatInputModule,
     MatFormFieldModule,
+    //MatSidenavModule,
     FormsModule,
     ReactiveFormsModule,
     MatDialogModule,

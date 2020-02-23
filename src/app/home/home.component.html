@@ -1,8 +1,17 @@
-<mat-toolbar color="primary">
-  <img src="/assets/img/wsa-logo.png" class="left">
-  <span (click)="goHome()" class="words">Wolverine Sports Analytics</span>
+<div >
+  <div style="height: 120vh;">
+    <mat-toolbar color="primary" class="toolbar">
+      <mat-toolbar-row fxFlexFill>
+        <a routerLink="/home" mat-button style="width : 10em;" style="text-align:left"><img class="left" layout-align="left" src="/assets/img/wsa-logo.png"></a>
+        <a routerLink="/about" mat-button>About</a>
+        <a routerLink="/members" mat-button>Members</a>
 
-  <span class="example-fill-remaining-space"></span>
-  <span *ngIf="loggedIn">Hello {{ currentUser.firstName }}!</span>
-  <button mat-button (click)="login()" *ngIf="!loggedIn">Login</button>
-</mat-toolbar>
+        <span class="example-fill-remaining-space"></span>
+        <span *ngIf="loggedIn">Hello {{ currentUser.firstName }}!</span>
+        <button mat-button (click)="login()" *ngIf="!loggedIn">Login</button>
+        <a *ngIf="loggedIn"(click)="logout()" mat-button>Logout</a>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </div>
+</div>
