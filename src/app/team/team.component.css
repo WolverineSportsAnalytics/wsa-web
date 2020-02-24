@@ -7,3 +7,20 @@
 #second-header {
   color: #616161;
 }
+
+.board {
+  margin-top: auto;
+}
+
+.example-card {
+  text-align: left;
+}
+
+.linkedin-in {
+  color: #2867B2;
+  font-size: 20px;
+}
+
+.github-icon {
+  font-size: 20px;
+}

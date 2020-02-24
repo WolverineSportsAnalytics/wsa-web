@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PersonInterface } from '../shared/models/person';
 import { environment } from '../../environments/environment';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-team',
@@ -12,16 +13,19 @@ export class TeamComponent implements OnInit {
   public breakpoint;
   public wsaLogo;
 
+  faGithub = faGithub;
+  faLinkedinIn = faLinkedinIn;
+
   constructor() {
     this.persons = [];
     this.persons = [
+      {name: 'Justin Liss', title: 'Co-President', img: environment.imageURL + 'JustinLiss.jpg'},
+      {name: 'Cindy Gu', title: 'Co-President', img: environment.imageURL + 'CindyGu.jpg'},
+      {name: 'Erin Haley', title: 'Outreach Coordinator', img: environment.imageURL + 'ErinHaley.jpg'},
       {name: 'Brendan Hart', title: 'Founder', img: environment.imageURL + 'BrendanHartWSA.jpg'},
       {name: 'Evan Ciancio', title: 'Board', img: environment.imageURL + 'EvanCiancio.jpg' },
       {name: 'Jake Becker', title: 'Board', img: environment.imageURL + 'JakeBecker.jpg'},
-      {name: 'Phillip Mathew', title: 'Board', img: environment.imageURL + 'phillipmathew.jpg'},
-      {name: 'Justin Liss', title: 'Co-President', img: environment.imageURL + 'JustinLiss.jpg'},
-      {name: 'Cindy Gu', title: 'Co-President', img: environment.imageURL + 'CindyGu.jpg'},
-      {name: 'Erin Haley', title: 'Outreach Coordinator', img: environment.imageURL + 'ErinHaley.jpg'}
+      {name: 'Phillip Mathew', title: 'Board', img: environment.imageURL + 'phillipmathew.jpg'}
     ];
 
     if (window.innerWidth <= 400) {

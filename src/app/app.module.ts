@@ -28,6 +28,8 @@ import { AboutComponent } from './about/about.component';
 import { TeamComponent } from './team/team.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 //import { FlexLayoutModule } from '@angular/flex-layout';
 //import {HttpClientInMemoryWebApiModule, InMemoryWebApiModule} from 'angular-in-memory-web-api';
 
@@ -59,7 +61,8 @@ import { ContactComponent } from './contact/contact.component';
     MatDialogModule,
     RouterModule.forRoot(routes),
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
     //FlexLayoutModule,
   ],
   providers: [
@@ -68,4 +71,4 @@ import { ContactComponent } from './contact/contact.component';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
