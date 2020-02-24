@@ -24,49 +24,56 @@ export class TeamComponent implements OnInit {
         title: 'Co-President',
         img: environment.imageURL + 'JustinLiss.jpg',
         linkedin: 'https://www.linkedin.com/in/justinliss/',
-        github: 'https://github.com/justinliss?tab=repositories'
+        github: 'https://github.com/justinliss?tab=repositories',
+        hasGithub: true
       },
 
       { name: 'Cindy Gu',
         title: 'Co-President',
         img: environment.imageURL + 'CindyGu.jpg',
         linkedin: 'https://www.linkedin.com/in/cindyjgu/',
-        github: 'https://github.com/cindygu4'
+        github: 'https://github.com/cindygu4',
+        hasGithub: true
       },
 
       { name: 'Erin Haley',
         title: 'Outreach Coordinator',
         img: environment.imageURL + 'ErinHaley.jpg',
         linkedin: 'https://www.linkedin.com/in/erinahaley/',
-        github: 'https://github.com/erinhale'
+        github: 'https://github.com/erinhale',
+        hasGithub: true
       },
 
       { name: 'Brendan Hart',
         title: 'Founder',
         img: environment.imageURL + 'BrendanHartWSA.jpg',
         linkedin: 'https://www.linkedin.com/in/hbrendan/',
-        github: 'https://github.com/brendanahart'
+        github: 'https://github.com/brendanahart',
+        hasGithub: true
       },
 
       { name: 'Evan Ciancio',
         title: 'Board',
         img: environment.imageURL + 'EvanCiancio.jpg',
         linkedin: 'https://www.linkedin.com/in/evan-ciancio-69ba65146/',
-        github: 'https://github.com/eciancio'
+        github: 'https://github.com/eciancio',
+        hasGithub: true
       },
 
       { name: 'Jake Becker',
         title: 'Board',
         img: environment.imageURL + 'JakeBecker.jpg',
         linkedin: 'https://www.linkedin.com/in/jakegbecker/',
-        github: 'none'
+        github: 'none',
+        hasGithub: false
       },
 
       { name: 'Phillip Mathew',
         title: 'Board',
         img: environment.imageURL + 'PhillipMathew.jpg',
         linkedin: 'https://www.linkedin.com/in/phillip-mathew/',
-        github: 'https://github.com/phillipmathew314'
+        github: 'https://github.com/phillipmathew314',
+        hasGithub: true
       }
 
     ];
@@ -96,6 +103,10 @@ export class TeamComponent implements OnInit {
     } else {
       this.breakpoint = 4;
     }
+  }
+
+  goToUrl(url: string) {
+    window.location.href = url;
   }
 
   ngOnInit() {

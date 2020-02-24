@@ -15,8 +15,12 @@
         </mat-card-header>
         <mat-card-content></mat-card-content>
         <mat-card-actions>
-          <button mat-icon-button><fa-icon [icon]="faGithub" class="github-icon"></fa-icon></button>
-          <button mat-icon-button><fa-icon [icon]="faLinkedinIn" class="linkedin-in"></fa-icon></button>
+          <button mat-icon-button (click)="goToUrl(person.linkedin)">
+            <fa-icon [icon]="faLinkedinIn" class="linkedin-in"></fa-icon>
+          </button>
+          <button mat-icon-button *ngIf="person.hasGithub" (click)="goToUrl(person.github)">
+            <fa-icon [icon]="faGithub" class="github-icon"></fa-icon>
+          </button>
         </mat-card-actions>
       </mat-card>
     </mat-grid-tile>

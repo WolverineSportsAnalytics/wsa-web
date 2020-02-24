@@ -4,4 +4,5 @@ export interface PersonInterface {
   img: string;
   linkedin: string;
   github: string;
+  hasGithub: boolean;
 }

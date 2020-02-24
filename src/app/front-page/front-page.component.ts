@@ -8,20 +8,10 @@ import { environment } from '../../environments/environment';
   styleUrls: ['./front-page.component.css']
 })
 export class FrontPageComponent implements OnInit {
-  public persons: PersonInterface[];
   public breakpoint;
   public wsaLogo;
 
   constructor() {
-    this.persons = [];
-    this.persons = [
-      {name: 'Brendan Hart', title: 'Founder', img: environment.imageURL + 'BrendanHartWSA.jpg'},
-      {name: 'Evan Ciancio', title: 'President', img: environment.imageURL + 'EvanCiancio.jpg' },
-      {name: 'Jake Becker', title: 'President', img: environment.imageURL + 'JakeBecker.jpg'},
-      {name: 'Phillip Mathew', title: 'Vice President', img: environment.imageURL + 'phillipmathew.jpg'},
-      {name: 'Justin Liss', title: 'Member', img: environment.imageURL + 'JustinLiss.jpg'},
-      {name: 'Cindy Gu', title: 'Member', img: environment.imageURL + 'CindyGu.jpg'}
-    ];
 
     this.wsaLogo = environment.imageURL + 'tile.png';
 
