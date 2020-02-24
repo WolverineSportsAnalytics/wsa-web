@@ -13,7 +13,7 @@
 }
 
 .example-card {
-  display: inline;
+  align-items: left;
 }
 
 .linkedin-in {
@@ -24,4 +24,11 @@
 .github-icon {
   color: #24292E;
   font-size: 20px;
+}
+
+.card-header {
+  justify-content: flex-start;
+  display: block;
+  align-items: left;
+  margin-left: -15px;
 }

@@ -3,14 +3,15 @@
   <p id="second-header"><br>Meet the executive board of Wolverine Sports Analytics</p>
 </div>
 <div class="board">
+  <p><br></p>
   <mat-grid-list cols="3" rowHeight="1:1">
     <mat-grid-tile *ngFor="let person of persons" class="mat-grid-tile-members">
       <mat-card class="example-card">
         <img mat-card-image src="{{ person.img }}" alt="Photo of {{ person.name }}"
              style="max-height: 300px; max-width: 250px;">
         <mat-card-header>
-          <mat-card-title>{{ person.name }}</mat-card-title>
-          <mat-card-subtitle>{{ person.title }}</mat-card-subtitle>
+          <mat-card-title class="card-header">{{ person.name }}</mat-card-title>
+          <mat-card-subtitle class="card-header">{{ person.title }}</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content></mat-card-content>
         <mat-card-actions>
