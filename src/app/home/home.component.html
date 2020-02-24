@@ -7,13 +7,13 @@
             <img id="left" src="/assets/img/wsa-logo.png">
           </a>
         </div>
-        <a routerLink="/about" mat-button>About</a>
-        <a routerLink="/team" mat-button>Team</a>
+        <a routerLink="/about" mat-button>ABOUT</a>
+        <a routerLink="/team" mat-button>TEAM</a>
 
         <span class="example-fill-remaining-space"></span>
-        <span *ngIf="loggedIn">Hello {{ currentUser.firstName }}!</span>
-        <button mat-button (click)="login()" *ngIf="!loggedIn">Login</button>
-        <a *ngIf="loggedIn"(click)="logout()" mat-button>Logout</a>
+        <span *ngIf="loggedIn">Hello {{ currentUser.username }}!</span>
+        <button mat-button (click)="login()" *ngIf="!loggedIn">LOGIN</button>
+        <a *ngIf="loggedIn"(click)="logout()" mat-button>LOGOUT</a>
       </mat-toolbar-row>
     </mat-toolbar>
     <router-outlet></router-outlet>

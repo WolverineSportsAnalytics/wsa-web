@@ -56,7 +56,7 @@ import { TeamComponent } from './team/team.component';
     RouterModule.forRoot(routes),
     FormsModule,
     HttpClientModule
-    //FlexLayoutModule
+    //FlexLayoutModule,
   ],
   providers: [
     AuthService,

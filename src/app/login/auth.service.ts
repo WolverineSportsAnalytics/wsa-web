@@ -18,25 +18,41 @@ export class AuthService {
     this.currentUser = null;
   }
 
+  private globalUser = {
+    username: 'wsa',
+    password: 'LeBron>MJ!'
+  };
+
   loginUser(userName: string, password: string) {
     // set current user to logged in user
     const loginInfo = { username: userName, password: password };
 
     this.currentUser = {
-      firstName: 'WSA',
-      lastName: 'WSA',
-      username: 'WSA'
+      username: loginInfo.username,
+      password: loginInfo.password,
     };
 
-    // server will do authentication
-    return new Observable(observer => {
-      observer.next(true);
-      observer.complete();
+    if ((this.currentUser.username == this.globalUser.username) && (this.currentUser.password == this.globalUser.password)) {
+      // server will do authentication
+      return new Observable(observer => {
+        observer.next(true);
+        observer.complete();
 
-      // unsubscribe function doesn't need to do anything in this
-      // because values are delivered synchronously
-      return {unsubscribe() {}};
-    });
+        // unsubscribe function doesn't need to do anything in this
+        // because values are delivered synchronously
+        return {unsubscribe() {}};
+      });
+    } else {
+      // server will do authentication
+      return new Observable(observer => {
+        observer.next(false);
+        observer.complete();
+
+        // unsubscribe function doesn't need to do anything in this
+        // because values are delivered synchronously
+        return {unsubscribe() {}};
+      });
+    }
   }
 
   isAuthenticated() {
