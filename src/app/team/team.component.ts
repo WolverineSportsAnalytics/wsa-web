@@ -25,7 +25,8 @@ export class TeamComponent implements OnInit {
         img: environment.imageURL + 'JustinLiss.jpg',
         linkedin: 'https://www.linkedin.com/in/justinliss/',
         github: 'https://github.com/justinliss?tab=repositories',
-        hasGithub: true
+        hasGithub: true,
+        gradYear: 2021
       },
 
       { name: 'Cindy Gu',
@@ -33,7 +34,8 @@ export class TeamComponent implements OnInit {
         img: environment.imageURL + 'CindyGu.jpg',
         linkedin: 'https://www.linkedin.com/in/cindyjgu/',
         github: 'https://github.com/cindygu4',
-        hasGithub: true
+        hasGithub: true,
+        gradYear: 2022
       },
 
       { name: 'Erin Haley',
@@ -41,7 +43,8 @@ export class TeamComponent implements OnInit {
         img: environment.imageURL + 'ErinHaley.jpg',
         linkedin: 'https://www.linkedin.com/in/erinahaley/',
         github: 'https://github.com/erinhale',
-        hasGithub: true
+        hasGithub: true,
+        gradYear: 2021
       },
 
       { name: 'Brendan Hart',
@@ -49,7 +52,8 @@ export class TeamComponent implements OnInit {
         img: environment.imageURL + 'BrendanHartWSA.jpg',
         linkedin: 'https://www.linkedin.com/in/hbrendan/',
         github: 'https://github.com/brendanahart',
-        hasGithub: true
+        hasGithub: true,
+        gradYear: 2018
       },
 
       { name: 'Evan Ciancio',
@@ -57,7 +61,8 @@ export class TeamComponent implements OnInit {
         img: environment.imageURL + 'EvanCiancio.jpg',
         linkedin: 'https://www.linkedin.com/in/evan-ciancio-69ba65146/',
         github: 'https://github.com/eciancio',
-        hasGithub: true
+        hasGithub: true,
+        gradYear: 2020
       },
 
       { name: 'Jake Becker',
@@ -65,7 +70,8 @@ export class TeamComponent implements OnInit {
         img: environment.imageURL + 'JakeBecker.jpg',
         linkedin: 'https://www.linkedin.com/in/jakegbecker/',
         github: 'none',
-        hasGithub: false
+        hasGithub: false,
+        gradYear: 2020
       },
 
       { name: 'Phillip Mathew',
@@ -73,7 +79,8 @@ export class TeamComponent implements OnInit {
         img: environment.imageURL + 'PhillipMathew.jpg',
         linkedin: 'https://www.linkedin.com/in/phillip-mathew/',
         github: 'https://github.com/phillipmathew314',
-        hasGithub: true
+        hasGithub: true,
+        gradYear: 2020
       }
 
     ];
@@ -106,7 +113,7 @@ export class TeamComponent implements OnInit {
   }
 
   goToUrl(url: string) {
-    window.location.href = url;
+    location.href = url;
   }
 
   ngOnInit() {

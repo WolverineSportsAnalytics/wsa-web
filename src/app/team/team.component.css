@@ -33,7 +33,15 @@
   align-items: left;
   margin-left: -15px;
 }
+
 .mat-grid-tile-members {
   margin: 10px;
   display: flex;
+}
+
+.card-content {
+  justify-content: flex-start;
+  display: block;
+  align-items: left;
+  margin-left: -15px;
 }

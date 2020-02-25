@@ -13,7 +13,9 @@
           <mat-card-title class="card-header">{{ person.name }}</mat-card-title>
           <mat-card-subtitle class="card-header">{{ person.title }}</mat-card-subtitle>
         </mat-card-header>
-        <mat-card-content></mat-card-content>
+        <mat-card-content>
+          Grad Year: {{ person.gradYear }}
+        </mat-card-content>
         <mat-card-actions>
           <button mat-icon-button (click)="goToUrl(person.linkedin)">
             <fa-icon [icon]="faLinkedinIn" class="linkedin-in"></fa-icon>

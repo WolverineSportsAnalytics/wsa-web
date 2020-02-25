@@ -5,4 +5,5 @@ export interface PersonInterface {
   linkedin: string;
   github: string;
   hasGithub: boolean;
+  gradYear: number;
 }
