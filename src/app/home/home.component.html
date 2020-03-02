@@ -12,10 +12,10 @@
         <button mat-button [matMenuTriggerFor]="projectsMenu">PROJECTS</button>
         <mat-menu #projectsMenu="matMenu">
           <button mat-menu-item routerLink="/projects">Home</button>
-          <button mat-menu-item>Fanduel Optimizer</button>
+          <button mat-menu-item routerLink="/projects/fanduel-optimizer">Fanduel Optimizer</button>
           <button mat-menu-item routerLink="/projects/michigan-football-project">Michigan Football Recruiting</button>
-          <button mat-menu-item>Michigan Women's Basketball</button>
-          <button mat-menu-item>Michigan Hockey</button>
+          <button mat-menu-item routerLink="/projects/michigan-wbb-project">Michigan Women's Basketball</button>
+          <button mat-menu-item routerLink="/projects/michigan-hockey-project">Michigan Hockey</button>
         </mat-menu>
         <a routerLink="/contact" mat-button>CONTACT</a>
 

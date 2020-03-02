@@ -31,6 +31,9 @@ import { ContactComponent } from './contact/contact.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { MichiganFootballComponent } from './michigan-football/michigan-football.component';
+import { FanduelOptimizerComponent } from './fanduel-optimizer/fanduel-optimizer.component';
+import { MichiganWBBComponent } from './michigan-wbb/michigan-wbb.component';
+import { MichiganHockeyComponent } from './michigan-hockey/michigan-hockey.component';
 //import { FlexLayoutModule } from '@angular/flex-layout';
 //import {HttpClientInMemoryWebApiModule, InMemoryWebApiModule} from 'angular-in-memory-web-api';
 
@@ -44,7 +47,10 @@ import { MichiganFootballComponent } from './michigan-football/michigan-football
     TeamComponent,
     ProjectsComponent,
     ContactComponent,
-    MichiganFootballComponent
+    MichiganFootballComponent,
+    FanduelOptimizerComponent,
+    MichiganWBBComponent,
+    MichiganHockeyComponent
   ],
   imports: [
     BrowserModule,

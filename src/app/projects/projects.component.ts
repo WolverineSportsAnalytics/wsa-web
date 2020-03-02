@@ -19,12 +19,22 @@ export class ProjectsComponent implements OnInit {
     this.projects = [
       { name: 'Michigan Football Recruiting Project',
         // img: add later,
-        routeName:'projects/michigan-football-recruiting-project'
+        routeName:'/projects/michigan-football-recruiting-project'
       },
 
       {
         name: "Michigan Women's Basketball Project",
-        routeName: ''
+        routeName: '/projects/michigan-wbb-project'
+      },
+
+      {
+        name: "Michigan Hockey Project",
+        routeName: '/projects/michigan-hockey-project'
+      },
+
+      {
+        name: "NBA Fanduel Optimizer",
+        routeName: '/projects/fanduel-optimizer'
       }
 
     ];
