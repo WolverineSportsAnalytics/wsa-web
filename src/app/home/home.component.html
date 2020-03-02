@@ -9,7 +9,14 @@
         </div>
         <a routerLink="/about" mat-button>ABOUT</a>
         <a routerLink="/team" mat-button>TEAM</a>
-        <a routerLink="/projects" mat-button>PROJECTS</a>
+        <button mat-button [matMenuTriggerFor]="projectsMenu">PROJECTS</button>
+        <mat-menu #projectsMenu="matMenu">
+          <button mat-menu-item routerLink="/projects">Home</button>
+          <button mat-menu-item>Fanduel Optimizer</button>
+          <button mat-menu-item routerLink="/projects/michigan-football-project">Michigan Football Recruiting</button>
+          <button mat-menu-item>Michigan Women's Basketball</button>
+          <button mat-menu-item>Michigan Hockey</button>
+        </mat-menu>
         <a routerLink="/contact" mat-button>CONTACT</a>
 
         <span class="example-fill-remaining-space"></span>

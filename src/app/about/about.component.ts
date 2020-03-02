@@ -9,7 +9,6 @@ import { environment } from '../../environments/environment';
 export class AboutComponent implements OnInit {
     public breakpoint;
     public rowflex;
-    public wsaLogo;
 
     constructor() {
       if (window.innerWidth <= 400) {

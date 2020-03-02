@@ -6,6 +6,7 @@ import { TeamComponent } from './team/team.component';
 import { AboutComponent } from "./about/about.component";
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
+import { MichiganFootballComponent } from './michigan-football/michigan-football.component';
 
 export const routes: Routes = [
   { path: '', component:FrontPageComponent },
@@ -14,6 +15,7 @@ export const routes: Routes = [
   { path: 'team', component: TeamComponent},
   { path: 'about', component: AboutComponent},
   { path: 'projects', component: ProjectsComponent },
-  { path: 'contact', component: ContactComponent}
+  { path: 'contact', component: ContactComponent},
+  { path: 'projects/michigan-football-project', component: MichiganFootballComponent}
   //{ path: 'home/sports', loadChildren: './sports/sports.module#SportsModule', canActivate: [LoginGuardService]}
 ];

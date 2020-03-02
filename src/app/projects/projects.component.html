@@ -2,4 +2,14 @@
   <h1 color="primary">PROJECTS</h1>
   <p><br></p>
   <button mat-stroked-button class="contact-button" (click)="goToContact()">CONTACT US</button>
+  <div class="info">
+    <p>
+      Located below are some of our current and past projects.
+    </p>
+  </div>
+  <div class="projects">
+    <p><br></p>
+    <mat-grid-list [cols]="breakpoint" [rowHeight]="rowflex">
+    </mat-grid-list>
+  </div>
 </div>

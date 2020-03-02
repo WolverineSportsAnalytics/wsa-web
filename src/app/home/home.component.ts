@@ -4,6 +4,7 @@ import { LoginComponent } from '../login/login.component';
 import { MatDialog } from '@angular/material/dialog';
 import { User } from '../shared/models/user';
 import { AuthService } from '../login/auth.service';
+import { ProjectInterface } from '../shared/models/projects';
 //import { MatSidenavModule } from '@angular/material/sidenav';
 
 @Component({
@@ -14,9 +15,25 @@ import { AuthService } from '../login/auth.service';
 export class HomeComponent implements OnInit {
   public loggedIn: boolean;
   public currentUser: User;
+  public projects: ProjectInterface[];
 
   constructor(private router: Router, public dialog: MatDialog, private auth: AuthService) {
     this.loggedIn = this.isAuthenticated();
+    
+    this.projects = [];
+
+    this.projects = [
+      { name: 'Michigan Football Recruiting Project',
+        // img: add later,
+        routeName:'projects/michigan-football-recruiting-project'
+      },
+
+      {
+        name: "Michigan Women's Basketball Project",
+        routeName: ''
+      }
+
+    ];
   }
 
   ngOnInit() {

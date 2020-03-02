@@ -30,6 +30,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { MichiganFootballComponent } from './michigan-football/michigan-football.component';
 //import { FlexLayoutModule } from '@angular/flex-layout';
 //import {HttpClientInMemoryWebApiModule, InMemoryWebApiModule} from 'angular-in-memory-web-api';
 
@@ -42,7 +43,8 @@ import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
     AboutComponent,
     TeamComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    MichiganFootballComponent
   ],
   imports: [
     BrowserModule,

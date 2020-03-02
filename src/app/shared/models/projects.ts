@@ -1,5 +1,5 @@
-export interface ProjectsInterface {
+export interface ProjectInterface {
   name: string;
-  img: string;
+  //img: string;
   routeName: string;
 }
