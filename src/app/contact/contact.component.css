@@ -4,6 +4,10 @@
   color: #3F51B5;
 }
 
+#reach-out {
+  color: black;
+}
+
 .linkedin-in {
   color: #FFFFFF;
   font-size: 20px;
@@ -12,9 +16,26 @@
 .linkedin-button {
   background-color: #2867B2;
   color: #FFFFFF;
+  margin-top: 1em;
 }
 
 .tab-1{
 	display: inline-block;
   width: 0.9em;
+}
+
+.email-list {
+  text-align: center;
+  margin-top: 3em;
+  font-size: 16px;
+}
+
+.form {
+  font-size: 13px;
+}
+
+.signup {
+  margin-top: 1em;
+  background-color: #3F51B5;
+  color: #FFFFFF;
 }

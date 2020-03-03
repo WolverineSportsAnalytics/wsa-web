@@ -1,7 +1,38 @@
 <div class="header">
   <h1 color="primary">CONTACT</h1>
-  <p><br></p>
+  <p id="reach-out">
+    <br>Feel free to reach out to us with any questions or connect with us through any of our social media platforms or email.
+  </p>
   <button mat-raised-button (click)="goToUrl(wsaLinkedin)" class="linkedin-button">
     <fa-icon [icon]="faLinkedinIn" class="linkedin-in"></fa-icon><span class="tab-1"></span>LinkedIn
   </button>
+</div>
+<div class="email-list">
+  <p>Join our mailing list!</p>
+  <div class="form">
+
+    <div>
+      <mat-form-field appearance="fill" id="firstName">
+        <mat-label>First Name</mat-label>
+        <input matInput placeholder="Justin" [formControl]="firstName" required>
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field appearance="fill" id="lastName">
+        <mat-label>Last Name</mat-label>
+        <input matInput placeholder="Liss" [formControl]="lastName" required>
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field appearance="fill">
+        <mat-label>Enter your email</mat-label>
+        <input matInput placeholder="uniqname@umich.edu" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+    </div>
+
+  </div>
+  <button mat-raised-button class="signup">Sign Up</button>
 </div>
