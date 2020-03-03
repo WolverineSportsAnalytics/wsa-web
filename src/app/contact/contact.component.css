@@ -3,3 +3,18 @@
   text-align: center;
   color: #3F51B5;
 }
+
+.linkedin-in {
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.linkedin-button {
+  background-color: #2867B2;
+  color: #FFFFFF;
+}
+
+.tab-1{
+	display: inline-block;
+  width: 0.9em;
+}
