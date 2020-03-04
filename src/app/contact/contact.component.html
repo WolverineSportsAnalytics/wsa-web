@@ -9,32 +9,5 @@
 </div>
 <div class="email-list">
   <p>Join our mailing list!</p>
-  <div class="form">
-    <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="example-container">
-
-      <div>
-        <mat-form-field appearance="fill" id="firstName">
-          <mat-label>First Name</mat-label>
-          <input matInput placeholder="Justin" [formControl]="firstName" required>
-        </mat-form-field>
-      </div>
-
-      <div>
-        <mat-form-field appearance="fill" id="lastName">
-          <mat-label>Last Name</mat-label>
-          <input matInput placeholder="Liss" [formControl]="lastName" required>
-        </mat-form-field>
-      </div>
-
-      <div>
-        <mat-form-field appearance="fill">
-          <mat-label>Enter your email</mat-label>
-          <input matInput placeholder="uniqname@umich.edu" [formControl]="email" required>
-          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-        </mat-form-field>
-      </div>
-
-      <button mat-raised-button type="submit" class="signup" (submit)="onSubmit()">Sign Up</button>
-    </form>
-  </div>
+  <button mat-raised-button class="signup" (click)="goToUrl(signUp)">Sign Up</button>
 </div>
