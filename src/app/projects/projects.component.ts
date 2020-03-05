@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from '../../environments/environment';
 import { ProjectInterface } from '../shared/models/projects';
+import { MatIconRegistry } from '@angular/material/icon';
+import { Breakpoints, BreakpointState, BreakpointObserver } from '@angular/cdk/layout';
+import { Observable } from 'rxjs';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-projects',
@@ -13,30 +17,36 @@ export class ProjectsComponent implements OnInit {
   public projects: ProjectInterface[];
   public breakpoint;
   public rowflex;
+  faExternalLinkAlt = faExternalLinkAlt;
 
-  constructor(private router: Router) {
+  isMobile: Observable<BreakpointState>;
+
+  constructor(private router: Router, private breakpointObserver: BreakpointObserver) {
     this.projects = [];
     this.projects = [
       { name: 'Michigan Football Recruiting Project',
         // img: add later,
-        routeName:'/projects/michigan-football-recruiting-project'
+        routeName: '/projects/michigan-football-recruiting-project',
+        years: 'Jan. 2018 - April 2018'
       },
 
       {
         name: "Michigan Women's Basketball Project",
-        routeName: '/projects/michigan-wbb-project'
+        routeName: '/projects/michigan-wbb-project',
+        years: 'Sep. 2019 - Present'
       },
 
       {
         name: "Michigan Hockey Project",
-        routeName: '/projects/michigan-hockey-project'
+        routeName: '/projects/michigan-hockey-project',
+        years: 'May 2020 - Present'
       },
 
       {
         name: "NBA Fanduel Optimizer",
-        routeName: '/projects/fanduel-optimizer'
+        routeName: '/projects/fanduel-optimizer',
+        years: 'Sep. 2017 - April 2019'
       }
-
     ];
 
     if (window.innerWidth <= 400) {
@@ -66,12 +76,12 @@ export class ProjectsComponent implements OnInit {
     }
   }
 
-
   goToContact() {
     this.router.navigate(['/contact']);
   }
 
   ngOnInit(): void {
+    this.isMobile = this.breakpointObserver.observe([ Breakpoints.Handset, Breakpoints.Tablet ]);
   }
 
 }

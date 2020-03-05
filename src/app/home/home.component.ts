@@ -19,10 +19,10 @@ export class HomeComponent implements OnInit {
 
   constructor(private router: Router, public dialog: MatDialog, private auth: AuthService) {
     this.loggedIn = this.isAuthenticated();
-    
+
     this.projects = [];
 
-    this.projects = [
+    /**this.projects = [
       { name: 'Michigan Football Recruiting Project',
         // img: add later,
         routeName:'projects/michigan-football-recruiting-project'
@@ -33,7 +33,7 @@ export class HomeComponent implements OnInit {
         routeName: ''
       }
 
-    ];
+    ];**/
   }
 
   ngOnInit() {
