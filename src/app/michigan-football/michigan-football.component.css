@@ -3,3 +3,16 @@
   text-align: center;
   color: #3F51B5;
 }
+
+.info {
+  margin-top: 3em;
+  margin-left: 8em;
+  margin-right: 8em;
+  line-height: 2em;
+  text-align: justify;
+}
+
+.tab-1{
+	display: inline-block;
+  width: 3em;
+}
