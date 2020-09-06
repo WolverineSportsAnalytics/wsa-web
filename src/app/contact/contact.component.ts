@@ -23,7 +23,7 @@ export class ContactComponent implements OnInit {
 
   constructor(private breakpointObserver: BreakpointObserver, private formBuilder: FormBuilder) {
     this.wsaLinkedin = 'https://www.linkedin.com/company/wolverinesportsanalytics/';
-    this.signUp = 'https://forms.gle/YhpxR57MLypMFphZA';
+    this.signUp = 'https://forms.gle/4Gr4582SyJ9V77Bj8';
   }
 
   goToUrl(url: string) {
